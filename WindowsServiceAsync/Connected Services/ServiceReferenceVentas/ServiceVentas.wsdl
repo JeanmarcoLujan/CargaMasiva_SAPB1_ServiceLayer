@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="ServiceVentas" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.2.230:8087/ServiceVentas.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.2.230:8087/ServiceVentas.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.2.230:8087/ServiceVentas.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceVentas_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createDelivery_InputMessage">
+    <wsdl:part name="parameters" element="tns:createDelivery" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createDelivery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createDeliveryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createInvoice_InputMessage">
+    <wsdl:part name="parameters" element="tns:createInvoice" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createInvoice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createPayment_InputMessage">
+    <wsdl:part name="parameters" element="tns:createPayment" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createPayment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createCreditNote_InputMessage">
+    <wsdl:part name="parameters" element="tns:createCreditNote" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createCreditNote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createCreditNoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:createItem" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createEntrada_InputMessage">
+    <wsdl:part name="parameters" element="tns:createEntrada" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createEntrada_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createEntradaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_updateItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateItem" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_updateItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_ExistItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExistItem" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_ExistItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExistItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_ExistSN_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExistSN" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_ExistSN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExistSNResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createBusinessPartner_InputMessage">
+    <wsdl:part name="parameters" element="tns:createBusinessPartner" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_createBusinessPartner_OutputMessage">
+    <wsdl:part name="parameters" element="tns:createBusinessPartnerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_registerDocumentDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerDocumentDB" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_registerDocumentDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerDocumentDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_registerDocumentDBDetail_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerDocumentDBDetail" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_registerDocumentDBDetail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerDocumentDBDetailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_registerPaymentDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerPaymentDB" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_registerPaymentDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerPaymentDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_registerPaymentInvDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerPaymentInvDB" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_registerPaymentInvDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerPaymentInvDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_registerPaymentCashDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerPaymentCashDB" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_registerPaymentCashDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerPaymentCashDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_getTiendaInfoDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTiendaInfoDB" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_getTiendaInfoDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTiendaInfoDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_getStockStore_InputMessage">
+    <wsdl:part name="parameters" element="tns:getStockStore" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_getStockStore_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getStockStoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_getStockStoreReserva_InputMessage">
+    <wsdl:part name="parameters" element="tns:getStockStoreReserva" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_getStockStoreReserva_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getStockStoreReservaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_getStocktStoreItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:getStocktStoreItem" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_getStocktStoreItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getStocktStoreItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_getItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:getItem" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_getItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_getLote_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLote" />
+  </wsdl:message>
+  <wsdl:message name="IServiceVentas_getLote_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLoteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceVentas">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/Login" message="tns:IServiceVentas_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/LoginResponse" message="tns:IServiceVentas_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createDelivery">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/createDelivery" message="tns:IServiceVentas_createDelivery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/createDeliveryResponse" message="tns:IServiceVentas_createDelivery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createInvoice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/createInvoice" message="tns:IServiceVentas_createInvoice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/createInvoiceResponse" message="tns:IServiceVentas_createInvoice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createPayment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/createPayment" message="tns:IServiceVentas_createPayment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/createPaymentResponse" message="tns:IServiceVentas_createPayment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createCreditNote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/createCreditNote" message="tns:IServiceVentas_createCreditNote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/createCreditNoteResponse" message="tns:IServiceVentas_createCreditNote_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/createItem" message="tns:IServiceVentas_createItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/createItemResponse" message="tns:IServiceVentas_createItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createEntrada">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/createEntrada" message="tns:IServiceVentas_createEntrada_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/createEntradaResponse" message="tns:IServiceVentas_createEntrada_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/updateItem" message="tns:IServiceVentas_updateItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/updateItemResponse" message="tns:IServiceVentas_updateItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExistItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/ExistItem" message="tns:IServiceVentas_ExistItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/ExistItemResponse" message="tns:IServiceVentas_ExistItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExistSN">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/ExistSN" message="tns:IServiceVentas_ExistSN_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/ExistSNResponse" message="tns:IServiceVentas_ExistSN_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="createBusinessPartner">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/createBusinessPartner" message="tns:IServiceVentas_createBusinessPartner_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/createBusinessPartnerResponse" message="tns:IServiceVentas_createBusinessPartner_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registerDocumentDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/registerDocumentDB" message="tns:IServiceVentas_registerDocumentDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/registerDocumentDBResponse" message="tns:IServiceVentas_registerDocumentDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registerDocumentDBDetail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/registerDocumentDBDetail" message="tns:IServiceVentas_registerDocumentDBDetail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/registerDocumentDBDetailResponse" message="tns:IServiceVentas_registerDocumentDBDetail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registerPaymentDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/registerPaymentDB" message="tns:IServiceVentas_registerPaymentDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/registerPaymentDBResponse" message="tns:IServiceVentas_registerPaymentDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registerPaymentInvDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/registerPaymentInvDB" message="tns:IServiceVentas_registerPaymentInvDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/registerPaymentInvDBResponse" message="tns:IServiceVentas_registerPaymentInvDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registerPaymentCashDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/registerPaymentCashDB" message="tns:IServiceVentas_registerPaymentCashDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/registerPaymentCashDBResponse" message="tns:IServiceVentas_registerPaymentCashDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTiendaInfoDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/getTiendaInfoDB" message="tns:IServiceVentas_getTiendaInfoDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/getTiendaInfoDBResponse" message="tns:IServiceVentas_getTiendaInfoDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getStockStore">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/getStockStore" message="tns:IServiceVentas_getStockStore_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/getStockStoreResponse" message="tns:IServiceVentas_getStockStore_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getStockStoreReserva">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/getStockStoreReserva" message="tns:IServiceVentas_getStockStoreReserva_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/getStockStoreReservaResponse" message="tns:IServiceVentas_getStockStoreReserva_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getStocktStoreItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/getStocktStoreItem" message="tns:IServiceVentas_getStocktStoreItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/getStocktStoreItemResponse" message="tns:IServiceVentas_getStocktStoreItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/getItem" message="tns:IServiceVentas_getItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/getItemResponse" message="tns:IServiceVentas_getItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceVentas/getLote" message="tns:IServiceVentas_getLote_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceVentas/getLoteResponse" message="tns:IServiceVentas_getLote_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceVentas" type="tns:IServiceVentas">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createDelivery">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/createDelivery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createInvoice">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/createInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createPayment">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/createPayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createCreditNote">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/createCreditNote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createItem">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/createItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createEntrada">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/createEntrada" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateItem">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/updateItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistItem">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/ExistItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExistSN">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/ExistSN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createBusinessPartner">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/createBusinessPartner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerDocumentDB">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/registerDocumentDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerDocumentDBDetail">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/registerDocumentDBDetail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerPaymentDB">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/registerPaymentDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerPaymentInvDB">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/registerPaymentInvDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerPaymentCashDB">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/registerPaymentCashDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTiendaInfoDB">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/getTiendaInfoDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStockStore">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/getStockStore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStockStoreReserva">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/getStockStoreReserva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStocktStoreItem">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/getStocktStoreItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getItem">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/getItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLote">
+      <soap:operation soapAction="http://tempuri.org/IServiceVentas/getLote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceVentas">
+    <wsdl:port name="BasicHttpBinding_IServiceVentas" binding="tns:BasicHttpBinding_IServiceVentas">
+      <soap:address location="http://192.168.2.230:8087/ServiceVentas.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

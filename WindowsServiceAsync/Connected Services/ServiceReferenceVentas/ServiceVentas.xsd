@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://192.168.2.230:8087/ServiceVentas.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" />
+  <xs:element name="Login">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoginResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createDelivery">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="obj" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="document" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createDeliveryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="createDeliveryResult" nillable="true" type="q1:DocumentRpta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createInvoice">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="obj" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="document" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createInvoiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="createInvoiceResult" nillable="true" type="q2:DocumentRpta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createPayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="obj" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="document" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createPaymentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="createPaymentResult" nillable="true" type="q3:DocumentRpta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createCreditNote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="obj" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="document" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createCreditNoteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="createCreditNoteResult" nillable="true" type="q4:DocumentRpta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="obj" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="document" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createItemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="createItemResult" nillable="true" type="q5:DocumentRpta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createEntrada">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="obj" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="document" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createEntradaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="createEntradaResult" nillable="true" type="q6:DocumentRpta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="obj" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="document" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateItemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="updateItemResult" nillable="true" type="q7:DocumentRpta" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExistItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExistItemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExistItemResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExistSN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CardCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ExistSNResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ExistSNResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createBusinessPartner">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="obj" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="document" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="createBusinessPartnerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="createBusinessPartnerResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerDocumentDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="document" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerDocumentDBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="registerDocumentDBResult" nillable="true" type="q8:DocumentRptaBD" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerDocumentDBDetail">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="documentDetail" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerDocumentDBDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="registerDocumentDBDetailResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerPaymentDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="payment" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerPaymentDBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="registerPaymentDBResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerPaymentInvDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="paymentInv" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerPaymentInvDBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="registerPaymentInvDBResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerPaymentCashDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="paymentCash" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerPaymentCashDBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="registerPaymentCashDBResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTiendaInfoDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoTienda" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTiendaInfoDBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getTiendaInfoDBResult" nillable="true" type="q9:Store" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getStockStore">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="whsCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getStockStoreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getStockStoreResult" nillable="true" type="q10:ArrayOfStockProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getStockStoreReserva">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="whsCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getStockStoreReservaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getStockStoreReservaResult" nillable="true" type="q11:ArrayOfStockProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getStocktStoreItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="whsCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="itemCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getStocktStoreItemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getStocktStoreItemResult" nillable="true" type="q12:ArrayOfStockProducto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getItem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getItemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getItemResult" nillable="true" type="q13:ArrayOfItem" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLote">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="itemCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="whsCode" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLoteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getLoteResult" nillable="true" type="q14:ArrayOfLote" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

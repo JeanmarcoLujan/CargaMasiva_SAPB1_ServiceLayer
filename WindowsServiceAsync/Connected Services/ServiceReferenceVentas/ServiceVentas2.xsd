@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="DocumentRpta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DocEntry" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocTotal" type="xs:double" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Registered" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentRpta" nillable="true" type="tns:DocumentRpta" />
+  <xs:complexType name="DocumentRptaBD">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Proceso" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentRptaBD" nillable="true" type="tns:DocumentRptaBD" />
+  <xs:complexType name="Store">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="activo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="almacen" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="codigoTienda" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="contraseniaSAP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ocrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ocrCode2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ocrCode3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ocrCode4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ocrCode5" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tiempoFactura" type="xs:int" />
+      <xs:element minOccurs="0" name="tiempoSalida" type="xs:int" />
+      <xs:element minOccurs="0" name="usuarioSAP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Store" nillable="true" type="tns:Store" />
+  <xs:complexType name="ArrayOfStockProducto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StockProducto" nillable="true" type="tns:StockProducto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStockProducto" nillable="true" type="tns:ArrayOfStockProducto" />
+  <xs:complexType name="StockProducto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Stock" type="xs:double" />
+      <xs:element minOccurs="0" name="UM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WhsCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="StockProducto" nillable="true" type="tns:StockProducto" />
+  <xs:complexType name="ArrayOfItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Item" nillable="true" type="tns:Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfItem" nillable="true" type="tns:ArrayOfItem" />
+  <xs:complexType name="Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Item" nillable="true" type="tns:Item" />
+  <xs:complexType name="ArrayOfLote">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Lote" nillable="true" type="tns:Lote" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLote" nillable="true" type="tns:ArrayOfLote" />
+  <xs:complexType name="Lote">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BatchNum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaEmision" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ItemCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Stock" type="xs:double" />
+      <xs:element minOccurs="0" name="WhsCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Lote" nillable="true" type="tns:Lote" />
+</xs:schema>
