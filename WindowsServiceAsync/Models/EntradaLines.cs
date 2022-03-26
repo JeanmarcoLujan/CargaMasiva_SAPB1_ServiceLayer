@@ -14,5 +14,6 @@ namespace WindowsServiceAsync.Models
         public double UnitPrice { get; set; }
         public string WarehouseCode { get; set; }   
         public string AccountCode { get; set; }
+        public virtual List<EntradaBatch> BatchNumbers { get; set; }
     }
 }

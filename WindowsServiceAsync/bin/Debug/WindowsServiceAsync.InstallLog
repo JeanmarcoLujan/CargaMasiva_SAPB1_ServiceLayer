@@ -1,0 +1,220 @@
+﻿Instalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Instalando el servicio Service1...
+Creando el origen de EventLog Service1 en el registro Application...
+Deshaciendo ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Restaurando el registro de eventos al estado anterior para el origen Service1.
+Instalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Instalando el servicio Service1...
+Creando el origen de EventLog Service1 en el registro Application...
+Deshaciendo ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Restaurando el registro de eventos al estado anterior para el origen Service1.
+Instalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Instalando el servicio Service1...
+Creando el origen de EventLog Service1 en el registro Application...
+Deshaciendo ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Restaurando el registro de eventos al estado anterior para el origen Service1.
+Desinstalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Quitando el origen de EventLog Service1.
+Se está quitando el servicio Service1 del sistema...
+El servicio Service1 se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Instalando el servicio Service1...
+El servicio Service1 se ha instalado correctamente.
+Creando el origen de EventLog Service1 en el registro Application...
+Confirmando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Desinstalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Quitando el origen de EventLog Service1.
+Se está quitando el servicio Service1 del sistema...
+El servicio Service1 se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Instalando el servicio Service1...
+El servicio Service1 se ha instalado correctamente.
+Creando el origen de EventLog Service1 en el registro Application...
+Confirmando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Desinstalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Quitando el origen de EventLog Service1.
+Se está quitando el servicio Service1 del sistema...
+El servicio Service1 se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Instalando el servicio Service1...
+El servicio Service1 se ha instalado correctamente.
+Creando el origen de EventLog Service1 en el registro Application...
+Confirmando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Desinstalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Quitando el origen de EventLog Service1.
+Se está quitando el servicio Service1 del sistema...
+El servicio Service1 se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Instalando el servicio Service1...
+El servicio Service1 se ha instalado correctamente.
+Creando el origen de EventLog Service1 en el registro Application...
+Confirmando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Desinstalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Quitando el origen de EventLog Service1.
+Se está quitando el servicio Service1 del sistema...
+El servicio Service1 se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Instalando el servicio Service1...
+El servicio Service1 se ha instalado correctamente.
+Creando el origen de EventLog Service1 en el registro Application...
+Confirmando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Instalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Instalando el servicio Service1...
+Creando el origen de EventLog Service1 en el registro Application...
+Deshaciendo ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Restaurando el registro de eventos al estado anterior para el origen Service1.
+Desinstalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Quitando el origen de EventLog Service1.
+Se está quitando el servicio Service1 del sistema...
+El servicio Service1 se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Instalando el servicio Service1...
+El servicio Service1 se ha instalado correctamente.
+Creando el origen de EventLog Service1 en el registro Application...
+Confirmando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Desinstalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Quitando el origen de EventLog Service1.
+Se está quitando el servicio Service1 del sistema...
+El servicio Service1 se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Instalando el servicio Service1...
+El servicio Service1 se ha instalado correctamente.
+Creando el origen de EventLog Service1 en el registro Application...
+Confirmando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Desinstalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Quitando el origen de EventLog Service1.
+Se está quitando el servicio Service1 del sistema...
+El servicio Service1 se ha quitado correctamente del sistema.
+Instalando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog
+Instalando el servicio Service1...
+El servicio Service1 se ha instalado correctamente.
+Creando el origen de EventLog Service1 en el registro Application...
+Confirmando ensamblado 'C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   assemblypath = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.exe
+   logfile = C:\Users\AlbertoLujan\source\repos\WindowsServiceAsync\WindowsServiceAsync\bin\Debug\WindowsServiceAsync.InstallLog

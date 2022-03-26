@@ -16,7 +16,7 @@ namespace WindowsServiceAsync.Data
 
         DocumentRpta CreateEntrada(string token, string document);
 
-        DocumentRpta UpdateItem(string token, string document, string id);
+        bool UpdateItem(string token, string document, string id);
 
     }
 }

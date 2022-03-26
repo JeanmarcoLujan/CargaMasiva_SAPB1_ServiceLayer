@@ -1,0 +1,14 @@
+C3001005-Brownie Halloween-Se registro con exito
+C3001071-PANETON MA-Se registro con exito
+C3001077-Alfajor Pop-Se registro con exito
+C3001079-Crust de Pecanas y Mango-Se registro con exito
+C3003025-Pomo Galletas ChocoChips-Se registro con exito
+C3003078-Casa de Galleta - Chica - Desarmada-Se registro con exito
+C3003080-Casa de Galleta - Grande - Desarmada-Se registro con exito
+C3008011-Conitos Rellenos-Se registro con exito
+C3008067-Macarrones Chicos Rellenos de Ganache 25 Unidades-Se registro con exito
+C3008091-Apple Cake Pops-Se registro con exito
+C3020035-Pan Baguette Multigrano-Se registro con exito
+C3020037 -Pan Campesino Finas Hierbas 500GR-Internal error (-10) occurred
+C3200069 -Ensalada Griega-Se produjo un error interno (-10)
+C3200070 -Ensalada Cobb-Internal error (-10) occurred

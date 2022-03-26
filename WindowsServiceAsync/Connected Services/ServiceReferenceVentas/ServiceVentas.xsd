@@ -115,7 +115,7 @@
   <xs:element name="updateItemResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="updateItemResult" nillable="true" type="q7:DocumentRpta" />
+        <xs:element minOccurs="0" name="updateItemResult" type="xs:boolean" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -172,7 +172,7 @@
   <xs:element name="registerDocumentDBResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="registerDocumentDBResult" nillable="true" type="q8:DocumentRptaBD" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="registerDocumentDBResult" nillable="true" type="q7:DocumentRptaBD" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -242,7 +242,7 @@
   <xs:element name="getTiendaInfoDBResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getTiendaInfoDBResult" nillable="true" type="q9:Store" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getTiendaInfoDBResult" nillable="true" type="q8:Store" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -256,7 +256,7 @@
   <xs:element name="getStockStoreResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getStockStoreResult" nillable="true" type="q10:ArrayOfStockProducto" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getStockStoreResult" nillable="true" type="q9:ArrayOfStockProducto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -270,7 +270,7 @@
   <xs:element name="getStockStoreReservaResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getStockStoreReservaResult" nillable="true" type="q11:ArrayOfStockProducto" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getStockStoreReservaResult" nillable="true" type="q10:ArrayOfStockProducto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -285,7 +285,7 @@
   <xs:element name="getStocktStoreItemResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getStocktStoreItemResult" nillable="true" type="q12:ArrayOfStockProducto" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getStocktStoreItemResult" nillable="true" type="q11:ArrayOfStockProducto" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -299,7 +299,7 @@
   <xs:element name="getItemResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getItemResult" nillable="true" type="q13:ArrayOfItem" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getItemResult" nillable="true" type="q12:ArrayOfItem" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -314,7 +314,7 @@
   <xs:element name="getLoteResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getLoteResult" nillable="true" type="q14:ArrayOfLote" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/WcfServiceVentas.Models" minOccurs="0" name="getLoteResult" nillable="true" type="q13:ArrayOfLote" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

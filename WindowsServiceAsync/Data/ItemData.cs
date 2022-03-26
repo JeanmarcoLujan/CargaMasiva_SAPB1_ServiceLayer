@@ -30,10 +30,9 @@ namespace WindowsServiceAsync.Data
             return objClient.Login();
         }
 
-        public DocumentRpta UpdateItem(string token, string document, string id)
+        public bool UpdateItem(string token, string document, string id)
         {
-            DocumentRpta sdfsdf = objClient.updateItem(token, document, id);
-            return sdfsdf;
+            return objClient.updateItem(token, document, id);
         }
     }
 }

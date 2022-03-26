@@ -1,0 +1,3 @@
+C3020037 -Pan Campesino Finas Hierbas 500GR-Se produjo un error interno (-10)
+C3200069 -Ensalada Griega-Internal error (-10) occurred
+C3200070 -Ensalada Cobb-Se produjo un error interno (-10)

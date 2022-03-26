@@ -730,10 +730,10 @@ namespace WindowsServiceAsync.ServiceReferenceVentas {
         System.Threading.Tasks.Task<WindowsServiceAsync.ServiceReferenceVentas.DocumentRpta> createEntradaAsync(string obj, string document);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceVentas/updateItem", ReplyAction="http://tempuri.org/IServiceVentas/updateItemResponse")]
-        WindowsServiceAsync.ServiceReferenceVentas.DocumentRpta updateItem(string obj, string document, string id);
+        bool updateItem(string obj, string document, string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceVentas/updateItem", ReplyAction="http://tempuri.org/IServiceVentas/updateItemResponse")]
-        System.Threading.Tasks.Task<WindowsServiceAsync.ServiceReferenceVentas.DocumentRpta> updateItemAsync(string obj, string document, string id);
+        System.Threading.Tasks.Task<bool> updateItemAsync(string obj, string document, string id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IServiceVentas/ExistItem", ReplyAction="http://tempuri.org/IServiceVentas/ExistItemResponse")]
         bool ExistItem(string ItemCode);
@@ -903,11 +903,11 @@ namespace WindowsServiceAsync.ServiceReferenceVentas {
             return base.Channel.createEntradaAsync(obj, document);
         }
         
-        public WindowsServiceAsync.ServiceReferenceVentas.DocumentRpta updateItem(string obj, string document, string id) {
+        public bool updateItem(string obj, string document, string id) {
             return base.Channel.updateItem(obj, document, id);
         }
         
-        public System.Threading.Tasks.Task<WindowsServiceAsync.ServiceReferenceVentas.DocumentRpta> updateItemAsync(string obj, string document, string id) {
+        public System.Threading.Tasks.Task<bool> updateItemAsync(string obj, string document, string id) {
             return base.Channel.updateItemAsync(obj, document, id);
         }
         

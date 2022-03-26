@@ -18,11 +18,16 @@ namespace WindowsServiceAsync.Service
     {
         public static void getData(string token)
         {
-           // RegisterItemAndEntrada(token);
+            // RegisterItemAndEntrada(token);
 
-          // GetItems(token);
+            // GetItems(token);
 
-            UpdateItem(token);
+            // UpdateItem(token);
+
+            //CargarEntradas(token);
+
+            CargarEntradasLote(token);
+
         }
 
         static bool ValidateItem(string code)
@@ -39,19 +44,19 @@ namespace WindowsServiceAsync.Service
             return itemData.CreateItem(token, doc);
         }
 
-        static DocumentRpta updateItem(ItemB item, string token, string id)
+        static bool updateItem(ItemB item, string token, string id)
         {
             ItemData itemData = new ItemData();
             var doc = JsonConvert.SerializeObject(item);
             return itemData.UpdateItem(token, doc, id);
         }
 
-        static void GenerateEntrada(Entrada entrada, string token)
+        static DocumentRpta GenerateEntrada(Entrada entrada, string token)
         {
 
             ItemData itemData = new ItemData();
             var doc = JsonConvert.SerializeObject(entrada);
-            DocumentRpta documentRpta =  itemData.CreateEntrada(token, doc);
+            return  itemData.CreateEntrada(token, doc);
         }
 
 
@@ -217,12 +222,184 @@ namespace WindowsServiceAsync.Service
 
         static void UpdateItem(string token)
         {
-            ItemB item = new ItemB();
-            item.SalesItem = "Y";
+            string[] weekDays = new string[] {
+                "D2020012"
 
-            string id = "P2100001";
+            };
 
-            updateItem(item, token, id);
+            foreach (string aa in weekDays)
+            {
+                
+                ItemB item = new ItemB();
+                item.SalesItem = "Y";
+
+                string id = aa;
+
+                bool rpta = updateItem(item, token, id);
+
+                if (rpta)
+                    WriteToFileA(id);
+
+            }
+
         }
+
+
+
+        static void CargarEntradas(string token)
+        {
+
+            string[] articulos = new string[] {
+                "P2800121"
+
+            };
+
+
+
+            foreach (string aa in articulos)
+            {
+                Entrada entrada = new Entrada();
+                entrada.DocDate = "20220316";
+                entrada.DocDueDate = "20220316";
+
+                List<EntradaLines> lista = new List<EntradaLines>();
+
+
+
+
+                for (int i = 0; i < 10; i++)
+                {
+                    if (i == 9)
+                    {
+                        EntradaLines entradaLines = new EntradaLines();
+                        entradaLines.ItemCode = aa.ToString();
+                        entradaLines.Quantity = "2000";
+                        entradaLines.UnitPrice = 20.00;
+                        entradaLines.WarehouseCode = "001";
+                        entradaLines.AccountCode = "759901";
+                        lista.Add(entradaLines);
+                    }
+                    else
+                    {
+                        EntradaLines entradaLines = new EntradaLines();
+                        entradaLines.ItemCode = aa.ToString();
+                        entradaLines.Quantity = "2000";
+                        entradaLines.UnitPrice = 20.00;
+                        entradaLines.WarehouseCode = "0" + (i + 30).ToString();
+                        entradaLines.AccountCode = "759901";
+                        lista.Add(entradaLines);
+                    }
+
+
+
+                }
+
+                entrada.DocumentLines = lista;
+
+                var aaaa = GenerateEntrada(entrada, token);
+                
+
+                if(aaaa.Registered)
+                    WriteToFileA(aa.ToString());
+
+            }
+
+
+
+
+            
+
+        }
+
+
+        public static void CargarEntradasLote(string token)
+        {
+            string[] articulos = new string[] {
+                "V2080004"
+            };
+
+            foreach (string aa in articulos)
+            {
+                Entrada entrada = new Entrada();
+                entrada.DocDate = "20220315";
+                entrada.DocDueDate = "20220315";
+
+                List<EntradaLines> lista = new List<EntradaLines>();
+
+
+
+
+                for (int i = 0; i < 10; i++)
+                {
+                    if (i == 9)
+                    {
+                        EntradaLines entradaLines = new EntradaLines();
+                        entradaLines.ItemCode = aa.ToString();
+                        entradaLines.Quantity = "5000";
+                        entradaLines.UnitPrice = 20.00;
+                        entradaLines.WarehouseCode = "001";
+                        entradaLines.AccountCode = "759901";
+
+                        List<EntradaBatch> entradaBatches = new List<EntradaBatch>();
+
+                        EntradaBatch entradaBatch  = new EntradaBatch();
+
+                        entradaBatch.ItemCode = aa.ToString();
+                        entradaBatch.Quantity = "5000";
+                        entradaBatch.BatchNumber = "LT"+aa.ToString();
+
+                        entradaBatches.Add(entradaBatch);
+
+                        entradaLines.BatchNumbers = entradaBatches;
+
+                        lista.Add(entradaLines);
+                    }
+                    else
+                    {
+                        EntradaLines entradaLines = new EntradaLines();
+                        entradaLines.ItemCode = aa.ToString();
+                        entradaLines.Quantity = "5000";
+                        entradaLines.UnitPrice = 20.00;
+                        entradaLines.WarehouseCode = "0" + (i + 30).ToString();
+                        entradaLines.AccountCode = "759901";
+
+                        List<EntradaBatch> entradaBatches = new List<EntradaBatch>();
+
+                        EntradaBatch entradaBatch = new EntradaBatch();
+
+                        entradaBatch.ItemCode = aa.ToString();
+                        entradaBatch.Quantity = "5000";
+                        entradaBatch.BatchNumber = "LT" + aa.ToString();
+
+                        entradaBatches.Add(entradaBatch);
+
+                        entradaLines.BatchNumbers = entradaBatches;
+
+                        lista.Add(entradaLines);
+                    }
+
+
+
+                }
+
+
+
+                entrada.DocumentLines = lista;
+
+
+                var doc = JsonConvert.SerializeObject(entrada);
+
+                var aaaa = GenerateEntrada(entrada, token);
+
+
+                if (aaaa.Registered)
+                    WriteToFileA(aa.ToString());
+
+            }
+
+        }
+
+
+
     }
 }

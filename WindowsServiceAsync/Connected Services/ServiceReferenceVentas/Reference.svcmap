@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="1c580ec3-8494-40d4-80d4-c569644f7238" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="f65375f4-4cd4-4677-a333-910dde90cf90" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -22,11 +22,11 @@
     <MetadataSource Address="http://192.168.2.230:8087/ServiceVentas.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ServiceVentas.xsd" MetadataType="Schema" ID="65bc943c-02f1-41e6-85d2-f4f79c3d74ff" SourceId="1" SourceUrl="http://192.168.2.230:8087/ServiceVentas.svc?xsd=xsd0" />
-    <MetadataFile FileName="ServiceVentas.disco" MetadataType="Disco" ID="261abd02-69cf-4813-a7c6-34c8714b26a7" SourceId="1" SourceUrl="http://192.168.2.230:8087/ServiceVentas.svc?disco" />
-    <MetadataFile FileName="ServiceVentas.wsdl" MetadataType="Wsdl" ID="39487a70-e63b-4913-ac8c-026572c5e968" SourceId="1" SourceUrl="http://192.168.2.230:8087/ServiceVentas.svc?wsdl" />
-    <MetadataFile FileName="ServiceVentas1.xsd" MetadataType="Schema" ID="84811845-074a-4e55-b2cf-094f370c7cfb" SourceId="1" SourceUrl="http://192.168.2.230:8087/ServiceVentas.svc?xsd=xsd1" />
-    <MetadataFile FileName="ServiceVentas2.xsd" MetadataType="Schema" ID="f9f9e4b5-4694-4a87-9bd0-88cc5c98492b" SourceId="1" SourceUrl="http://192.168.2.230:8087/ServiceVentas.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceVentas.xsd" MetadataType="Schema" ID="5d383f6f-e1e0-40a8-bcd0-b7e68359fd8d" SourceId="1" SourceUrl="http://192.168.2.230:8087/ServiceVentas.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceVentas.disco" MetadataType="Disco" ID="00a4c8bb-385d-48cf-94c8-3dc7d059d842" SourceId="1" SourceUrl="http://192.168.2.230:8087/ServiceVentas.svc?disco" />
+    <MetadataFile FileName="ServiceVentas.wsdl" MetadataType="Wsdl" ID="05debd03-1a09-455e-bdb6-caf49d0fd686" SourceId="1" SourceUrl="http://192.168.2.230:8087/ServiceVentas.svc?wsdl" />
+    <MetadataFile FileName="ServiceVentas1.xsd" MetadataType="Schema" ID="269685aa-a6b2-4a53-b0a9-01bb2e617115" SourceId="1" SourceUrl="http://192.168.2.230:8087/ServiceVentas.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceVentas2.xsd" MetadataType="Schema" ID="c50774cc-0d68-4a8a-8e59-bc7f0f056db1" SourceId="1" SourceUrl="http://192.168.2.230:8087/ServiceVentas.svc?xsd=xsd2" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
